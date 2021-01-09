@@ -1,13 +1,14 @@
 .left-section {
   padding: 0;
+  float: left;
   position: fixed;
 }
 
 .sidebar {
   background-color: $sidebar-color;
   padding: 0;
-  min-height: 1080px;
-
+  height: 100%;
+  min-height: 2160px;
 
   .sidebar-title {
     color: $color-light;
@@ -20,7 +21,7 @@
     .hamburger {
       color: $color-light;
       font-size: 24px;
-      padding-top: 30px;
+      padding-top: 20px;
       opacity: 0.5;
 
       &:hover {
@@ -32,7 +33,7 @@
   .sidebar-menu {
     margin-bottom: 48px;
 
-    .menu-list {
+    .side-menu-list {
       list-style: none;
       padding: 0;
 
@@ -45,6 +46,7 @@
           opacity: 1;
           background-color: $hover-color;
           border-left: 5px solid $brand-main-color;
+          transition: $transition;
         }
       }
 
@@ -97,4 +99,13 @@
       }
     }
   }
+}
+@media (max-width: 767px) {
+  .sidebar {
+    min-height: 0;
+  }
+  .sidebar-menu {
+    display: none;
+  }
+
 }
