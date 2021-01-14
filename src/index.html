@@ -10,17 +10,15 @@
   </head>
   <body>
 
-    <nav class="left-section col-md-3 col-xl-2">
-      <div class="sidebar col-sm-12">
-        <div class="sidebar-splash col-sm-12">
-          <div class="row">
+    <section class="left-section col-md-3 col-xl-2">
+      <nav class="sidebar">
+        <div class="sidebar-header">
             <div class="sidebar-title col-8">
               <h2>Just do it</h2>
             </div>
             <div class="sidebar-button col-4">
               <a href="#"><i class="fas fa-bars hamburger"></i></a>
             </div>
-          </div>
         </div>
         <div class="sidebar-menu">
           <ul class="side-menu-list">
@@ -60,46 +58,46 @@
               </a>
             </li>
           </ul>
-          <div class="manager-title col-sm-12">
+          <div class="manager-title">
             <h4>YOUR MANAGER</h4>
           </div>
-          <div class="manager-data row col-sm-12">
+          <div class="manager-data">
             <div class="manager-image">
-              <a href="#"><img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"></a>
+              <a href="#"><img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="manager"></a>
+              <span class="dot manager-dot"></span>
             </div>
             <div class="manager-name">
               <a href="#">Mikhael E.</a>
             </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+    </section>
 
     <section class="middle-section col-md-9 col-xl-10">
-
       <nav class="topbar col-md-9 col-xl-10">
         <div class="topbar-menu">
           <ul class="top-menu-list">
             <li class="menu-item">
-              <a href="#" class="menu-link row">
+              <a href="#" class="menu-link">
                 <img src="images/icons/wallet.svg" class="menu-link-icon" alt="picture">
                 <p class="total-amount">$1,500.00</p>
                 <img src="images/icons/arrow-down-small.svg" class="menu-link-icon" alt="picture">
               </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link row">
+              <a href="#" class="menu-link">
                 <img src="images/icons/notification.svg" class="menu-link-icon" alt="picture">
               </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link row">
+              <a href="#" class="menu-link">
                 <img src="images/icons/profile.svg" class="menu-link-icon" alt="picture">
                 <p class="user-name">Leonidas King of Sparta</p>
               </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link row">
+              <a href="#" class="menu-link">
                 <img src="images/icons/quit.svg" class="menu-link-icon" alt="picture">
               </a>
             </li>
@@ -107,6 +105,156 @@
         </div>
       </nav>
 
+      <main class="content">
+        <section class="general content-wrapper">
+
+          <div class="statistic">
+            <div class="statistic-title">
+              <h3>GENERAL STATISTIC</h3>
+            </div>
+            <div class="calendar">
+              <input type="date" value="2021-01-10">
+              <input type="date" value="2021-01-10">
+              <a href="#" class="button-refresh"><img class="icon" src="images/icons/refresh.svg" alt="refresh" title="refresh"></a>
+            </div>
+            <div class="table">
+              <table class="statistic-table col-lg-5 col-xl-4">
+                <tr>
+                  <th>Visit Signups</th>
+                  <td>124</td>
+                </tr>
+                <tr>
+                  <th>FTD</th>
+                  <td>445</td>
+                </tr>
+              </table>
+              <table class="statistic-table col-lg-5 col-xl-4">
+                <tr>
+                  <th>Net Deposit</th>
+                  <td>564</td>
+                </tr>
+                <tr>
+                  <th>Turn Over</th>
+                  <td>432</td>
+                </tr>
+              </table>
+            </div>
+            <div class="earnings-chart">
+              <div class="chart-title col-lg-10 col-xl-8">
+                <h4>Earnings chart</h4>
+              </div>
+              <div class="chart-buttons col-lg-10 col-xl-8">
+                <ul class="buttons-list">
+                  <li class="button">
+                    <span class="dot dot-signups"></span>
+                    <a href="#" class="button-link">Signups</a>
+                  </li>
+                  <li class="button">
+                    <span class="dot dot-ftd"></span>
+                    <a href="#" class="button-link">FTD</a>
+                  </li>
+                  <li class="button">
+                    <span class="dot dot-earned"></span>
+                    <a href="#" class="button-link button-earned">Earned</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="chart-image-box col-lg-10 col-xl-8">
+                <img src="images/chart.png" class="chart-image" alt="chart">
+              </div>
+            </div>
+          </div>
+
+          <div class="links">
+            <div class="links-title">
+              <h3>LINKS</h3>
+            </div>
+            <div class="add-button">
+              <a href="#" class="button-link">+ add new</a>
+            </div>
+            <div class="list-wrapper">
+              <ul class="links-list col-lg-10 col-xl-8">
+                <li class="links-item">
+                  <h2 class="link-name col-5">Home page</h2>
+                  <a href="#" class="link-address col-5">http://www.homepage.com</a>
+                  <div class="icons-wrapper col-2">
+                    <a href="#" class="links-icon"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                  </div>
+                </li>
+                <li class="links-item">
+                  <h2 class="link-name col-5">Currently offer</h2>
+                  <a href="#" class="link-address col-5">http://www.currently.com</a>
+                  <div class="icons-wrapper col-2">
+                    <a href="#" class="links-icon"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                  </div>
+                </li>
+                <li class="links-item">
+                  <h2 class="link-name col-5">Blurpix</h2>
+                  <a href="#" class="link-address col-5">http://www.blurpix.com</a>
+                  <div class="icons-wrapper col-2">
+                    <a href="#" class="links-icon"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                  </div>
+                </li>
+                <li class="links-item">
+                  <h2 class="link-name col-5">Your Site</h2>
+                  <a href="#" class="link-address col-5">http://www.yoursite.com</a>
+                  <div class="icons-wrapper col-2">
+                    <a href="#" class="links-icon"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                  </div>
+                </li>
+                <li class="links-item">
+                  <h2 class="link-name col-5">Google</h2>
+                  <a href="#" class="link-address col-5">http://www.google.com</a>
+                  <div class="icons-wrapper col-2">
+                    <a href="#" class="links-icon"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                  </div>
+                </li>
+                <li class="links-item">
+                  <h2 class="link-name col-5">Facebook</h2>
+                  <a href="#" class="link-address col-5">http://www.facebook.com</a>
+                  <div class="icons-wrapper col-2">
+                    <a href="#" class="links-icon"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                  </div>
+                </li>
+                <li class="links-item">
+                  <h2 class="link-name col-5">Dashboard</h2>
+                  <a href="#" class="link-address col-5">http://www.dashboard.com</a>
+                  <div class="icons-wrapper col-2">
+                    <a href="#" class="links-icon"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                  </div>
+                </li>
+                <li class="links-item">
+                  <h2 class="link-name col-5">Blurax</h2>
+                  <a href="#" class="link-address col-5">http://www.blurax.com</a>
+                  <div class="icons-wrapper col-2">
+                    <a href="#" class="links-icon"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                  </div>
+                </li>
+                <li class="links-item">
+                  <h2 class="link-name col-5">Twitter</h2>
+                  <a href="#" class="link-address col-5">http://www.twitter.com</a>
+                  <div class="icons-wrapper col-2">
+                    <a href="#" class="links-icon"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
+                    <a href="#" class="links-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="add-button">
+              <a href="#" class="button-link">+ add new</a>
+            </div>
+          </div>
+        </section>
+      </main>
     </section>
+
   </body>
 </html>

@@ -1,0 +1,27 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.left-section {
+  padding: 0;
+  float: left;
+  position: fixed;
+  z-index: 1;
+}
+
+.middle-section {
+  padding: 0;
+  float: right;
+
+  .content {
+    position: relative;
+    top: 64px;
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: WhiteSmoke;
+    }
+  }
+}

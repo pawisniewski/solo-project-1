@@ -2,13 +2,17 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
+
+
+
+
+/* Components */
+@import "dot.scss";
+
+/* Sections */
 @import "sidebar";
 @import "topbar";
 
-/* Components */
-
-
-/* Sections */
-
 
 /* Pages */
+@import "general";

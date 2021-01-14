@@ -1,18 +1,21 @@
-.left-section {
-  padding: 0;
-  float: left;
-  position: fixed;
-}
-
 .sidebar {
   background-color: $sidebar-color;
   padding: 0;
-  height: 100%;
-  min-height: 2160px;
+  height: 100vh;
+
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    height: 64px;
+  }
 
   .sidebar-title {
     color: $color-light;
     text-align: left;
+
+    h2 {
+      margin: 0;
+    }
   }
 
   .sidebar-button {
@@ -21,7 +24,6 @@
     .hamburger {
       color: $color-light;
       font-size: 24px;
-      padding-top: 20px;
       opacity: 0.5;
 
       &:hover {
@@ -35,7 +37,9 @@
 
     .side-menu-list {
       list-style: none;
+      margin: 0;
       padding: 0;
+
 
       .menu-item {
         padding: 12px 12px;
@@ -64,16 +68,20 @@
     }
 
     .manager-title {
-      color: $color-light;
+      text-align: center;
+      color: $hover-color;
       border-top: 1px solid gray;
-      margin: 48px 0 24px 0;
+      margin: 24px 0;
     }
 
     .manager-data {
-      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
       .manager-image {
-        padding-left: 10px;
+        position: relative;
+        padding-right: 5px;
       }
 
       .manager-image img {
@@ -82,9 +90,13 @@
         height: 60px;
         object-fit: cover;
       }
+      .manager-image .manager-dot {
+        background-color: $manager-dot-color;
+        top: -45px;
+        left: -18px;
+      }
 
       .manager-name {
-        padding-top: 20px;
         padding-left: 5px;
       }
 
@@ -102,10 +114,15 @@
 }
 @media (max-width: 767px) {
   .sidebar {
-    min-height: 0;
+    height: 64px;
   }
+
   .sidebar-menu {
     display: none;
   }
-
+}
+@media (min-width: 768px) {
+  .sidebar-button {
+    display: none;
+  }
 }
