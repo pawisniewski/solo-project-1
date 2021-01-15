@@ -187,6 +187,7 @@
 
         .icons-wrapper {
           display: flex;
+          justify-content: center;
         }
       }
 
@@ -197,6 +198,7 @@
       .link-address {
         text-decoration: none;
         padding: 0;
+        margin: 0;
         text-align: start;
       }
 
@@ -242,13 +244,16 @@
     .link-name {
       padding: 0;
       margin: 10px 0;
+      text-align: center;
     }
 
     .link-address {
       margin-bottom: 10px;
     }
+
     .icons-wrapper {
       display: flex;
+      justify-content: center;
     }
   }
 }

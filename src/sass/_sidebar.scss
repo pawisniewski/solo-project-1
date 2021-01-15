@@ -2,6 +2,8 @@
   background-color: $sidebar-color;
   padding: 0;
   height: 100vh;
+  transform: scaleY(1);
+  transition: $transition;
 
   .sidebar-header {
     display: flex;
@@ -34,7 +36,6 @@
 
   .sidebar-menu {
     margin-bottom: 48px;
-    z-index: 1;
 
     .side-menu-list {
       list-style: none;
@@ -113,6 +114,7 @@
       }
     }
   }
+
   .top-menu-list {
     display: flex;
     justify-content: space-between;
@@ -178,9 +180,10 @@
       justify-content: center;
       width: 100%;
     }
+
     .flex-order {
       order: -1;
-  }
+    }
 
   }
 }
@@ -190,13 +193,17 @@
   }
 
   .sidebar-menu {
-    display: none;
+    height: 0;
+    transform: scaleY(0);
+    overflow: hidden;
   }
 
   .show {
-    display: block;
     height: 100vh;
+    transform: scaleY(1);
+    transition: $transition;
   }
+
   .manager-data {
     padding-bottom: 24px;
     border-bottom: 1px solid grey;
