@@ -2,7 +2,6 @@
   background-color: $sidebar-color;
   padding: 0;
   height: 100vh;
-  transform: scaleY(1);
   transition: $transition;
 
   .sidebar-header {
@@ -168,54 +167,5 @@
         filter: invert(100%);
       }
     }
-  }
-}
-@media (max-width: 439px) {
-  .top-menu-list {
-    flex-direction: column;
-
-    .menu-item {
-      margin-top: 12px;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-    }
-
-    .flex-order {
-      order: -1;
-    }
-
-  }
-}
-@media (max-width: 767px) {
-  .sidebar {
-    height: 64px;
-  }
-
-  .sidebar-menu {
-    height: 0;
-    transform: scaleY(0);
-    overflow: hidden;
-  }
-
-  .show {
-    height: 100vh;
-    transform: scaleY(1);
-    transition: $transition;
-  }
-
-  .manager-data {
-    padding-bottom: 24px;
-    border-bottom: 1px solid grey;
-  }
-}
-
-@media (min-width: 768px) {
-  .sidebar-button {
-    display: none;
-  }
-
-  .sidebar-menu .top-menu-list {
-    display: none;
   }
 }

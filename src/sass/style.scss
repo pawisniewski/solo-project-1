@@ -1,15 +1,23 @@
 @import "variables";
-@import "mixins";
 @import "normalize";
 @import "layout";
 
 /* Components */
-@import "dot.scss";
+@import "components/dot.scss";
 
 /* Sections */
-@import "sidebar";
-@import "topbar";
+@import "sections/sidebar";
+@import "sections/topbar";
 
 
 /* Pages */
-@import "general";
+@import "pages/general";
+@import "pages/details";
+@import "pages/links";
+@import "pages/banners";
+@import "pages/personaldata";
+@import "pages/payout";
+@import "pages/postback";
+
+/* Media */
+@import "media.scss";
