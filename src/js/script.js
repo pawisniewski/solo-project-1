@@ -10,11 +10,12 @@ document.querySelector('.hamburger').addEventListener('click', function(e) {
 
 
 const sectionClickHandler = function(event) {
+
   event.preventDefault();
   const clickedElement = this;
   console.log('Link was clicked!');
 
-  const activeLinks = document.querySelectorAll('.sidebar-menu a .active');
+  const activeLinks = document.querySelectorAll('.sidebar-menu a');
   for (let activeLink of activeLinks){
     activeLink.classList.remove('active');
   }
@@ -33,6 +34,7 @@ const sectionClickHandler = function(event) {
   console.log('targetSection:', targetSection);
 
   targetSection.classList.add('active');
+  window.scrollTo(0, 0);
 };
 
 const links = document.querySelectorAll('.sidebar-menu a');

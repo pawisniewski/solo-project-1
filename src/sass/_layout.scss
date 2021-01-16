@@ -6,12 +6,13 @@
   padding: 0;
   float: left;
   position: fixed;
-  z-index: 1;
+
 }
 
 .middle-section {
   padding: 0;
   float: right;
+  z-index: -1;
 
   .content {
     position: relative;
@@ -22,6 +23,7 @@
       flex-direction: column;
       align-items: center;
       background-color: WhiteSmoke;
+      min-height: 100vh;
     }
 
     .active {
