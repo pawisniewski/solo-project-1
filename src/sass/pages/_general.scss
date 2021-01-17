@@ -8,46 +8,6 @@
     color: $hover-color;
   }
 
-  .calendar {
-    display: flex;
-    justify-content: center;
-    padding: 36px 0;
-    border-top: 2px solid whitesmoke;
-    border-bottom: 2px solid whitesmoke;
-
-    input {
-      border: 2px solid whitesmoke;
-      border-radius: 5px;
-      color: grey;
-
-      &:hover {
-        border: 1px solid $brand-main-color;
-        transition: $transition;
-      }
-      &:focus {
-        outline: none;
-      }
-    }
-
-    .button-refresh {
-      background-color: $brand-main-color;
-      padding: 10px 12px 7px 12px;
-      margin-left: 10px;
-      border-radius: 5px;
-
-      &:hover {
-        transform: scale(1.1);
-        transition: $transition;
-      }
-
-      .icon {
-        filter: invert(1);
-        width: 20px;
-        height: 20px;
-      }
-    }
-  }
-
   .table {
     margin: 36px 0;
     display: flex;
@@ -111,11 +71,11 @@
         justify-content: center;
         list-style: none;
         padding: 0 12px 0 0;
-        margin: 24px 0;
+        margin: 24px 0 0 0;
+      }
 
-        .button {
-          margin: 16px 8px;
-        }
+      .buttons-list .button {
+        margin: 16px 8px;
       }
 
       .buttons-list .button-link {
@@ -128,12 +88,13 @@
 
       .buttons-list .button-earned {
         background-color: $color-light;
-        color: blue;
+        color: $signups-dot-color;
       }
     }
 
     .chart-image-box {
       margin: 48px 0;
+      padding: 0 15px 0 5px;
 
       .chart-image {
         width: 100%;

@@ -1,0 +1,40 @@
+.calendar {
+  display: flex;
+  justify-content: center;
+  padding: 36px 0;
+  border-top: 2px solid whitesmoke;
+  border-bottom: 2px solid whitesmoke;
+
+  input {
+    border: 2px solid whitesmoke;
+    border-radius: 5px;
+    color: grey;
+
+    &:hover {
+      border: 2px solid $brand-main-color;
+      transition: $transition;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .button-refresh {
+    background-color: $brand-main-color;
+    padding: 10px 12px 7px 12px;
+    margin-left: 10px;
+    border-radius: 5px;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: $transition;
+    }
+
+    .icon {
+      filter: invert(1);
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

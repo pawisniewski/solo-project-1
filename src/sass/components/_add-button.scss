@@ -1,0 +1,18 @@
+.add-button {
+  display: flex;
+  justify-content: center;
+
+  .button-link {
+    padding: 12px 24px;
+    margin: 24px 0;
+    border-radius: 5px;
+    background-color: $brand-main-color;
+    color: $color-light;
+    text-decoration: none;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: $transition;
+    }
+  }
+}

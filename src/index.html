@@ -14,7 +14,7 @@
       <nav class="sidebar">
         <div class="sidebar-header">
             <div class="sidebar-title col-8">
-              <h2>Just do it</h2>
+              <h1>Just do it</h1>
             </div>
             <div class="sidebar-button col-4">
               <a href="#"><i class="fas fa-bars hamburger"></i></a>
@@ -81,6 +81,7 @@
             <li class="menu-item">
               <a href="#" class="menu-link">
                 <img src="images/icons/notification.svg" class="menu-link-icon" alt="picture">
+                <span class="dot dot-notification"></span>
               </a>
             </li>
             <li class="menu-item flex-order">
@@ -113,6 +114,7 @@
             <li class="menu-item">
               <a href="#" class="menu-link">
                 <img src="images/icons/notification.svg" class="menu-link-icon" alt="picture">
+                <span class="dot dot-notification"></span>
               </a>
             </li>
             <li class="menu-item">
@@ -131,8 +133,8 @@
       </nav>
 
       <main class="content">
-        <section class="general-subpage content-wrapper active" id="general">
 
+        <section class="general-subpage content-wrapper active" id="general">
           <div class="statistic">
             <div class="statistic-title">
               <h2>GENERAL STATISTIC</h2>
@@ -185,7 +187,7 @@
                 </ul>
               </div>
               <div class="chart-image-box col-lg-10 col-xl-8">
-                <img src="images/chart.png" class="chart-image" alt="chart">
+                <canvas id="myChart"></canvas>
               </div>
             </div>
           </div>
@@ -386,48 +388,48 @@
             <div class="list-wrapper">
               <ul class="banners-list col-lg-10 col-xl-8">
                 <li class="banners-item">
-                  <h3 class="banner-name col-5">Home page</h3>
-                  <a href="#" class="banner-address col-5">http://www.homepage.com</a>
+                  <h3 class="banner-name col-4 col-lg-5">Banner main</h3>
+                  <a href="#" class="banner-address col-6 col-lg-5">http://www.website.com/bannermain.gif</a>
                   <div class="icons-wrapper col-2">
                     <a href="#" class="benners-icon"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
                     <a href="#" class="banners-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
                   </div>
                 </li>
                 <li class="banners-item">
-                  <h3 class="banner-name col-5">Home page</h3>
-                  <a href="#" class="banner-address col-5">http://www.homepage.com</a>
+                  <h3 class="banner-name col-4 col-lg-5">Sign up banner</h3>
+                  <a href="#" class="banner-address col-6 col-lg-5">http://www.website.com/signup.gif</a>
                   <div class="icons-wrapper col-2">
                     <a href="#" class="benners-icon"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
                     <a href="#" class="banners-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
                   </div>
                 </li>
                 <li class="banners-item">
-                  <h3 class="banner-name col-5">Home page</h3>
-                  <a href="#" class="banner-address col-5">http://www.homepage.com</a>
+                  <h3 class="banner-name col-4 col-lg-5">Banner left side</h3>
+                  <a href="#" class="banner-address col-6 col-lg-5">http://www.website.com/leftside.gif</a>
                   <div class="icons-wrapper col-2">
                     <a href="#" class="benners-icon"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
                     <a href="#" class="banners-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
                   </div>
                 </li>
                 <li class="banners-item">
-                  <h3 class="banner-name col-5">Home page</h3>
-                  <a href="#" class="banner-address col-5">http://www.homepage.com</a>
+                  <h3 class="banner-name col-4 col-lg-5">Vertical banner</h3>
+                  <a href="#" class="banner-address col-6 col-lg-5">http://www.website.com/vert.gif</a>
                   <div class="icons-wrapper col-2">
                     <a href="#" class="benners-icon"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
                     <a href="#" class="banners-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
                   </div>
                 </li>
                 <li class="banners-item">
-                  <h3 class="banner-name col-5">Home page</h3>
-                  <a href="#" class="banner-address col-5">http://www.homepage.com</a>
+                  <h3 class="banner-name col-4 col-lg-5">Front banner</h3>
+                  <a href="#" class="banner-address col-6 col-lg-5">http://www.website.com/front.gif</a>
                   <div class="icons-wrapper col-2">
                     <a href="#" class="benners-icon"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
                     <a href="#" class="banners-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
                   </div>
                 </li>
                 <li class="banners-item">
-                  <h3 class="banner-name col-5">Home page</h3>
-                  <a href="#" class="banner-address col-5">http://www.homepage.com</a>
+                  <h3 class="banner-name col-4 col-lg-5">Horizontal banner</h3>
+                  <a href="#" class="banner-address col-6 col-lg-5">http://www.website.com/horizontal.gif</a>
                   <div class="icons-wrapper col-2">
                     <a href="#" class="benners-icon"><img src="images/icons/links.svg" class="icon-image" alt="picture"></a>
                     <a href="#" class="banners-icon"><img src="images/icons/trash.svg" class="icon-image" alt="picture"></a>
@@ -461,6 +463,7 @@
 
       </main>
     </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

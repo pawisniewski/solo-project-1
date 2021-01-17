@@ -9,25 +9,6 @@
     border-bottom: 2px solid whitesmoke;
   }
 
-  .add-button {
-    display: flex;
-    justify-content: center;
-
-    .button-link {
-      padding: 12px 24px;
-      margin: 24px 0;
-      border-radius: 5px;
-      background-color: $brand-main-color;
-      color: $color-light;
-      text-decoration: none;
-
-      &:hover {
-        transform: scale(1.1);
-        transition: $transition;
-      }
-    }
-  }
-
   .list-wrapper {
     display: flex;
     justify-content: center;
@@ -63,15 +44,24 @@
         text-decoration: none;
         padding: 0;
         margin: 0;
-        text-align: start;
+        color: $signups-dot-color;
+
+        &:hover {
+          color: $brand-main-color;
+          transition: $transition;
+        }
       }
 
       .icons-wrapper .icon-image {
         margin: 10px;
         width: 20px;
         height: 20px;
-      }
 
+        &:hover {
+          transform: scale(1.1);
+          transition: $transition;
+        }
+      }
     }
   }
 }
