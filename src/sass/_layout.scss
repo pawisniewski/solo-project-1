@@ -32,17 +32,39 @@
 }
 
 h1 {
+  font-family: 'Dancing Script', cursive;
   font-size: 26px;
-  font-style: italic;
 }
 
 h2 {
-  font-size: 22px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 20px;
   color: grey;
   padding-left: 15px;
 }
 
 h3 {
-  font-size: 18px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
   color: grey;
+}
+
+h4 {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+input {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+th, td {
+  font-family: 'Roboto Condensed', sans-serif;
 }
