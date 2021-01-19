@@ -20,7 +20,7 @@
     const clickedElement = this;
     console.log('Link was clicked!');
 
-    const activeLinks = document.querySelectorAll('.sidebar-menu .menu-link');
+    const activeLinks = document.querySelectorAll('.side-menu-list .menu-link');
     for (let activeLink of activeLinks){
       activeLink.classList.remove('active');
     }
@@ -45,7 +45,7 @@
     document.querySelector('.sidebar-menu').classList.remove('show');
   };
 
-  const links = document.querySelectorAll('.sidebar-menu .menu-link');
+  const links = document.querySelectorAll('.side-menu-list .menu-link');
 
   for(let link of links){
     link.addEventListener('click', sectionClickHandler);
@@ -91,4 +91,71 @@
       },
     },
   });
+
+
+  /* Modals visibility */
+
+  const closeModal = function() {
+    document.getElementById('overlay').classList.remove('show-mod');
+    document.getElementById('quitModal').classList.remove('show-mod');
+    document.getElementById('chatModal').classList.remove('show-mod');
+  };
+
+  document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      closeModal();
+    });
+  });
+
+  document.querySelector('#overlay').addEventListener('click', function(e) {
+    if(e.target === this) {
+      closeModal();
+    }
+  });
+
+  document.addEventListener('keyup', function(e) {
+    if(e.keyCode === 27) {
+      closeModal();
+    }
+  });
+
+  const openModal = function(modal) {
+    document.querySelectorAll('#overlay > *').forEach(function(modal) {
+      modal.classList.remove('show-mod');
+    });
+    document.querySelector('#overlay').classList.add('show-mod');
+    document.querySelector(modal).classList.add('show-mod');
+  };
+
+
+  /* Quit modal listeners */
+
+  document.querySelector('.quit-side').addEventListener('click', function(event) {
+    event.preventDefault();
+    openModal('#quitModal');
+    console.log('Quit was clicked!');
+  });
+
+  document.querySelector('.quit-top').addEventListener('click', function(event) {
+    event.preventDefault();
+    openModal('#quitModal');
+    console.log('Quit was clicked!');
+  });
+
+
+  /* Chat modal listeners */
+
+  document.querySelector('.manager-image').addEventListener('click', function(event) {
+    event.preventDefault();
+    openModal('#chatModal');
+    console.log('Chat was clicked!');
+  });
+
+  document.querySelector('.manager-name').addEventListener('click', function(event) {
+    event.preventDefault();
+    openModal('#chatModal');
+    console.log('Chat was clicked!');
+  });
+
 }

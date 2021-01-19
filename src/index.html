@@ -92,7 +92,7 @@
               </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">
+              <a href="#" class="menu-link quit-side">
                 <img src="images/icons/quit.svg" class="menu-link-icon" alt="picture">
               </a>
             </li>
@@ -125,7 +125,7 @@
               </a>
             </li>
             <li class="menu-item">
-              <a href="#" class="menu-link">
+              <a href="#" class="menu-link quit-top">
                 <img src="images/icons/quit.svg" class="menu-link-icon" alt="picture">
               </a>
             </li>
@@ -464,6 +464,46 @@
 
       </main>
     </section>
+    <div class="overlay" id="overlay">
+
+      <div class="quit-modal" id="quitModal">
+        <div class="modal-tilte">
+          <div class="btn-close js--close-modal"></div>
+          <h3>Do you really want to Quit?</h3>
+        </div>
+        <div class="modal-buttons">
+          <button class="js--close-modal button-cancel">Cancel</button>
+          <button class="js--close-modal button-quit">Quit</button>
+        </div>
+      </div>
+
+      <div class="chat-modal col-12 col-sm-10 col-md-8 col-lg-6" id="chatModal">
+        <div class="modal-tilte">
+          <h3>ONLINE CHAT WITH YOUR PERSONAL MANAGER</h3>
+          <button class="btn-close js--close-modal">x</button>
+        </div>
+        <div class="modal-manager">
+          <div class="manager-image">
+            <a href="#"><img src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260" alt="manager"></a>
+          </div>
+          <div class="manager-name">
+            <a href="#" class="name">Mikhael E.</a>
+            <a href="#" class="online">online</a>
+          </div>
+        </div>
+        <form>
+          <div class="up-section">
+              <p>Hello, can I help You?</p>
+          </div>
+          <div class="down-section">
+            <textarea name="message-input">Enter the message...</textarea>
+            <button class="button-send">Send</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="js/script.js"></script>
   </body>
